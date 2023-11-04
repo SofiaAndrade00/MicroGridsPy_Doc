@@ -17,6 +17,9 @@ Contents
 
 .. toctree::
 
+   intro
    usage
+   formulation
    building
+   contributors
    api
