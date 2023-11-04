@@ -2,9 +2,9 @@
 
 # -- Project information
 
-project = 'Lumache'
-copyright = '2021, Graziella'
-author = 'Graziella'
+project = 'MicroGridsPy'
+copyright = '2021, SESAM Polimi'
+author = 'SESAM Polimi'
 
 release = '0.1'
 version = '0.1.0'
