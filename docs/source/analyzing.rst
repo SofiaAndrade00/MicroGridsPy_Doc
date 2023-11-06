@@ -2,7 +2,7 @@
 Analyzing and Visualizing a Model
 #################################
 
-The results of a hypatia model
+The results of a MicroGridsPy model
 ---------------------------------
 When a model is solved, the results will be postprocessed and uploaded to the interface in the format of a *nested Python dictionary*.
 The results dictionary classifies the outputs of the model in the following hierarchy:
