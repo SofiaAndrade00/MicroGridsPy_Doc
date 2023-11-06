@@ -6,7 +6,7 @@
 #######################################
 Introduction
 #######################################
-What is Hypatia
+What is MicroGridsPy
 =========================================
 Hypatia is an energy system modelling framework written in the objective oriented
 Python programming language. Contrary to most of the Python-based open-source energy and power
