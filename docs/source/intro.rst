@@ -13,19 +13,19 @@ MicroGridsPy is a bottom-up, open-source optimization model, running on `Pyomo <
 Why it is developed
 =========================================
 MicroGridsPy is inspired by the other existing energy system optimization models 
-particulary `OSeMOSYS <http://www.osemosys.org/>`_ by [Howells2011]_, 
+particularly `OSeMOSYS <http://www.osemosys.org/>`_ by [Howells2011]_, 
 `Calliope <https://calliope.readthedocs.io/en/stable/user/introduction.html>`_ by [Pfenninger-Pickering2018]_
 and `TIMES <https://iea-etsap.org/index.php/documentation>`_ by [Loulou2005]_.
-It is designed to compelete the path of these frameworks by addressing the main 
+It is designed to complete the path of these frameworks by addressing the main 
 challenges of the modern energy system modelling frameworks that are shortly explained in the following:
 
-* **Dynamic annual investments on the energy system:** With the aim of
+* **Dynamic annual investments in the energy system:** With the aim of
   exploring the possible evolution of the energy systems in the transition pathways,
-  the energy modeling frameworks need to cover both the operation and planning modes by simulateneously 
+  the energy modelling frameworks need to cover both the operation and planning modes simultaneously 
   delivering the required dynamic annual capacity expansions and full hourly dispatch of different technologies within the energy systems. 
   However, most of the existing models with high temporal resolution are falling
   short of delivering all the required annual investments in the long-term horizons and just
-  follow a snapshot approach for estimating the required new capacities to be installed for the future growths in the final demand.
+  follow a snapshot approach for estimating the required new capacities to be installed for future growth in the final demand.
 
 
 * **Resolution in time:** On the other hand, most of the planning models are not computationally
