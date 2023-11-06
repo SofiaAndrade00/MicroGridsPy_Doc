@@ -8,44 +8,11 @@ Introduction
 #######################################
 What is MicroGridsPy
 =========================================
-Hypatia is an energy system modelling framework written in the objective oriented
-Python programming language. Contrary to most of the Python-based open-source energy and power
-system modelling frameworks that are using `Pyomo <https://pyomo.readthedocs.io/en/stable/>`_ for 
-solving the optimization problem, Hypatia is based on `CVXPY <https://www.cvxpy.org/>`_ Domain-Specific Language 
-developed by [Diamond2016]_ . Hypatia can optimize both the hourly dispatch 
-and the annual capacity deployments of the energy system. Its final objective is 
-to minimize the total discounted cost of the system by considering all the required cost components 
-in each of its optimization modes. In summery, Hypatia is designed with the following main goals:
-
-* Allow easy interaction with the model code by using excel-based input data
-
-* Formulated to cover both operation and dynamic investment decisions
-
-* Provide the possibility to consider the investment annuities in its planning mode
-  based on the given economic lifetime and interest rate of each technology
-
-* Allow to model various categories of technologies such as supply, conversion,
-  transmission and storage.
-
-* Able to consider the synergies among different sectors of the energy system including
-  power, heat, transport, clean fuel (Hydrogen) and the others.
-
-* Designed to follow both the single-node and multi-node approach at will by the user.
-  Each node in Hypatia can be representative of a broad spectrum of spatial resolutions
-  starting from small-scale applications to the national and continental applications.
-
-* Allow to model the bilateral trade among any pairs of nodes through modelling the
-  inter-regional transmission links for all the represented energy carriers within the Reference Energy System
-
-* Able to adopt arbitary resolutions in time for each modelling year,
-  allowing to consider the full hourly variability of both demand and supply sides.
-
-* Have a fully transparent and open-source code, flexible to any possible future
-  modification and integration
+MicroGridsPy is a bottom-up, open-source optimization model, running on `Pyomo <https://pyomo.readthedocs.io/en/stable/>`_, a Python library used to model optimisation problems, whose primary goal is to offer an open-source approach to the issue of energy scaling and dispatch in mini-grids in remote locations. It was first developed in 2016 by the University of Liege and the code is freely available on GitHub. The model enables the optimization of micro-grid size and its dispatch strategy at the 1-hour temporal resolution, also returning as output the fixed and variable costs associated with each technology and the LCOE of the system. It is based on Linear Programming, and it enables the choice of the installed capacities of batteries, generators, and renewable energy sources that result in the lowest Net Present Cost (NPC) or lowest Operation and Maintenance expenses (O&M) during the project's lifespan while achieving the system limitations. However, in the latest version, it is also possible to consider a multi-objective optimization such as costs and emissions to model different scenarios with different drivers like environmental impact and not only economic parameters. The main inputs required by the tool to initialize the variables and formulate linear constraints, as shown in the figure below, are time series of load demand at 1-hour resolution for one year (or more years); time series of RES production at 1-hour resolution for one year; techno-economic parameters of the technologies and project parameters. In this context, it must be said that in the latest version of MicroGridsPy already structured load demand archetypes referring to rural villages in Sub-Saharan Africa at different latitudes are integrated into the model, from which the code directly derives the time series of load profile. Moreover, an endogenous calculation of RES production times series, solar and wind, relying on the NASA POWER platform is now possible. In the most recent version, there is also the possibility of simulating the connection of the mini-grid with an existing main grid by detailing electricity flows in both directions (electricity taken from the grid or fed into the grid), as well as the availability of the national grid in the event of blackouts.
 
 Why it is developed
 =========================================
-Hypatia is inspired by the other existing energy system optimization models 
+MicroGridsPy is inspired by the other existing energy system optimization models 
 particulary `OSeMOSYS <http://www.osemosys.org/>`_ by [Howells2011]_, 
 `Calliope <https://calliope.readthedocs.io/en/stable/user/introduction.html>`_ by [Pfenninger-Pickering2018]_
 and `TIMES <https://iea-etsap.org/index.php/documentation>`_ by [Loulou2005]_.
@@ -86,9 +53,9 @@ challenges of the modern energy system modelling frameworks that are shortly exp
 Acknowledgement
 =========================================
 
-* The development of Hypatia was not possible without the kind attention and help of Professor
+* The development of MicroGridsPy was not possible without the kind attention and help of Professor
   `Emanuela Colombo <https://www4.ceda.polimi.it/manifesti/manifesti/controller/ricerche/RicercaPerDocentiPublic.do?EVN_DIDATTICA=evento&k_doc=44891&lang=EN&aa=2014&tab_ricerca=1>`_.
-  We are fully grateful for having the chance to work under her supervison and would like to express our gratitude for her unwavering support.
+  We are fully grateful for having the chance to work under her supervision and would like to express our gratitude for her unwavering support.
 
 * We would also like to acknowledge `Steve Dimond <https://stevediamond.github.io/WWW/>`_ for his kind support and guide that allows us to better understand and use CVXPY for this framework
     
